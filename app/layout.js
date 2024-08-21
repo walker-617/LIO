@@ -10,6 +10,7 @@ export const metadata = {
 
 import NavBarDesktop from "@/components/navBars/navBarDesktop";
 import NavBarMobile from "@/components/navBars/navBarMobile";
+import BottomGrad from "@/components/home/bottomGrad";
 
 export default function RootLayout({ children }) {
   return (
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       >
         <NavBarDesktop />
         <NavBarMobile />
+        <BottomGrad />
         {children}
       </body>
     </html>
