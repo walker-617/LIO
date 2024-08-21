@@ -1,10 +1,10 @@
-import CustomIcon from "@/icons/testIcon";
+import Image from "next/image";
 
-function Section({ title, dir = "" }) {
+function Section({ title, icon, height,width, dir = "" }) {
   return (
-    <div className={`flex justify-around items-center  ${dir}`}>
+    <div className={`flex justify-evenly items-center  ${dir}`}>
       <div className="text-[80px] font-extrabold text-gray-400">{title}</div>
-      <CustomIcon height="500px" width="500px" color="#9a3412" />
+      <Image priority src={icon} height={height} width={width} alt="Meditating Doodle" />
     </div>
   );
 }
