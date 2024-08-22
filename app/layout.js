@@ -14,7 +14,7 @@ import BottomGrad from "@/components/home/bottomGrad";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" class="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${inter.className} selection:bg-orange-500 selection:text-black mb-[100px]`}
       >

@@ -8,8 +8,8 @@ function NavBarMobile() {
   const [close, setClose] = useState(true);
 
   return (
-    <div className="lg:hidden">
-      <div className=" sticky top-0 bg-black text-[10px] font-bold items-center justify-between flex p-[15px] flex-row gap-[40px] text-orange-500">
+    <div className="lg:hidden fixed top-0 w-screen bg-gradient-to-b from-black from-0% pb-[50px]">
+      <div className="text-[10px] font-bold items-center justify-between flex p-[15px] flex-row gap-[40px] text-orange-500">
         <a href="./" className="text-[30px] font-bold leading-none">
           LIO
         </a>
@@ -27,7 +27,6 @@ function NavBarMobile() {
             <a href="./myPortfolio" className="bg-orange-500 px-[5px]">
               My portfoLIO
             </a>
-            {/* <a href="./about" className="underline underline-offset-[5px]">About</a> */}
             <a href="./login" className="bg-orange-500 px-[5px]">
               Login
             </a>
@@ -37,10 +36,10 @@ function NavBarMobile() {
           </div>
         )}
       </div>
-      <form className="flex border-[1px] rounded-[0] border-orange-900 has-[:focus]:border-orange-500 py-[5px] pl-[10px] pr-[10px] mx-[12px] mt-[10px]">
+      <form className="bg-black bg-opacity-75 flex border-[1px] rounded-[0] border-orange-900 has-[:focus]:border-orange-500 py-[5px] pl-[10px] pr-[10px] mx-[12px] mt-[10px]">
         <input
           placeholder="Search portfoLIOs with email"
-          className=" mr-[5px] text-orange-500 placeholder:text-gray-400 placeholder:text-[13px] w-full placeholder:font-light text-[15px]  bg-transparent border-0  focus:outline-none"
+          className="mr-[5px] text-orange-500 placeholder:text-gray-400 placeholder:text-[13px] w-full placeholder:font-light text-[15px]  bg-transparent border-0  focus:outline-none"
         />
         <button className="cursor-pointer pl-[5px] border-l-[2px] border-orange-500">
           <SearchIcon height="25px" width="25px" color="#f97316" />

@@ -1,6 +1,6 @@
 function Welcome() {
   return (
-    <div className="h-screen flex flex-col justify-center gap-[10px] py-[150px]">
+    <div className="lg:h-screen flex flex-col lg:justify-center gap-[10px] pt-[200px] pb-[100px] lg:py-[200px]">
       <div className="text-[15px] sm:text-[20px] lg:text-[25px] font-bold text-gray-400 leading-none">
         Welcome to LIO
       </div>
